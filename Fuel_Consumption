@@ -1,0 +1,26 @@
+import java.util.*;
+class fuelConsumption {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter No. of Liters of Fuel: ");
+        double fuel = sc.nextFloat();
+        
+        System.out.print("Enter Distance: ");
+        double dist = sc.nextFloat();
+        
+        double miles = dist*0.6214;
+        
+        double gallon = fuel*0.2642;
+        
+        if(fuel<=0 || dist <= 0){
+            System.out.println("Invalid Input");
+        }
+        else{
+            System.out.println("The Average in L/Km is: " + String.format("%.2f",((fuel/dist)*100)));
+        System.out.println("The Average in M/Gallon is: " + String.format("%.2f",(miles/gallon)));
+            
+        }
+        
+        
+    }
+}
