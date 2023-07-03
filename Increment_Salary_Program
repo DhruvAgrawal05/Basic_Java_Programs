@@ -1,0 +1,26 @@
+import java.util.*;
+class salaryIncrement {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter the Salary: ");
+        float sal = sc.nextFloat();
+        System.out.print("Enter the performance appraisal rating:  ");
+        float par = sc.nextFloat();
+        
+        if(par>=1 && par<=3){
+            sal = sal + sal*0.10f;
+            System.out.println(sal);
+        }
+        else if(par>=3.1 && par<=4){
+            sal = sal + sal*0.25f;
+            System.out.println(sal);
+        }
+        else if(par>=4.1 && par<=5){
+            sal = sal + sal*0.30f;
+            System.out.println(sal);
+        }
+        else{
+            System.out.println("Error");
+        }
+    }
+}
